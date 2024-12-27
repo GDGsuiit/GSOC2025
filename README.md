@@ -10,4 +10,6 @@
   <p> Binith Kumar </p>
 
   <p> Sitam Jyoti Sahoo </p>
+
+  <p> Srujan Rana </p>
 </div>
