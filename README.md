@@ -11,6 +11,7 @@
 
   <p> Sitam Jyoti Sahoo </p>
 
+  <p> Srujan Rana </p>
   <p> Satyajit Mohapatra</p>
 
   <p> Anubhav Purohit </p>
