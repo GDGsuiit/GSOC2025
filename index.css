@@ -84,6 +84,17 @@ footer {
     bottom: 0;
 }
 
+footer nav a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+footer nav a:hover {
+    color: #0056b3;
+}
+
 /* Modal Styling */
 .modal {
     display: none;
@@ -118,6 +129,16 @@ footer {
     cursor: pointer;
 }
 
+#searchMembers {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Members List Styling */
 .members-list {
     display: flex;
     flex-wrap: wrap;
@@ -132,4 +153,11 @@ footer {
     border-radius: 5px;
     font-size: 1rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    text-align: center;
+}
+
+.card:hover {
+    background-color: #f5f5f5;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
 }
