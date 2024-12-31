@@ -25,31 +25,33 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
+    background: linear-gradient(135deg, #007bff, #0056b3);
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: absolute;
     top: 0;
+    transition: background 0.3s ease;
 }
 
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #333;
+    color: #ffffff;
 }
 
 #membersButton {
     padding: 10px 15px;
     font-size: 1rem;
     color: #ffffff;
-    background-color: #007bff;
+    background-color: #0056b3;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 #membersButton:hover {
-    background-color: #0056b3;
+    background-color: #004494;
 }
 
 /* Main Content */
@@ -75,13 +77,14 @@ h1 {
 footer {
     width: 100%;
     text-align: center;
-    background-color: #ffffff;
-    color: #666;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: #ffffff;
     padding: 10px 0;
     font-size: 1rem;
     border-top: 1px solid #ddd;
     position: absolute;
     bottom: 0;
+    transition: background 0.3s ease;
 }
 
 /* Modal Styling */
@@ -96,6 +99,7 @@ footer {
     justify-content: center;
     align-items: center;
     z-index: 10;
+    transition: opacity 0.3s ease;
 }
 
 .modal-content {
@@ -106,6 +110,14 @@ footer {
     max-width: 500px;
     text-align: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.modal.show .modal-content {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .close {
@@ -131,5 +143,11 @@ footer {
     padding: 10px 15px;
     border-radius: 5px;
     font-size: 1rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0,  0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
