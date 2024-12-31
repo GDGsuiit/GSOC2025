@@ -22,13 +22,17 @@
     
     <footer>
         GDG SUIIT X Innovation Club
+        <nav>
+            <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        </nav>
     </footer>
 
    
     <div id="membersModal" class="modal">
         <div class="modal-content">
-            <span id="closeModal" class="close">&times;</span>
-            <h2>Club Members</h2>
+            <button id="closeModal" class="close" aria-label="Close modal">&times;</button>
+            <h2 id="membersTitle">Club Members</h2>
+            <input type="text" id="searchMembers" placeholder="Search members..." aria-label="Search members">
             <div class="members-list">
                 <div class="card">Binith Kumar</div>
                 <div class="card">Gaurav Panda</div>

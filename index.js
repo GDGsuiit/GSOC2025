@@ -12,3 +12,18 @@ window.addEventListener('click', (event) => {
         membersModal.style.display = 'none';
     }
 });
+
+// Filter members based on search input
+searchMembers.addEventListener('input', function() {
+    const filter = searchMembers.value.toLowerCase();
+    const membersList = document.querySelectorAll('.card');
+    
+    membersList.forEach(function(member) {
+        const memberName = member.textContent.toLowerCase();
+        if (memberName.includes(filter)) {
+            member.style.display = 'block';
+        } else {
+            member.style.display = 'none';
+        }
+    });
+});
